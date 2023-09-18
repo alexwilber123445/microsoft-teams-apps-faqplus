@@ -315,21 +315,21 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common.Cards
                 },
 
                 // Adds the "Share feedback" button.
-                new AdaptiveSubmitAction
-                {
-                    Title = Strings.ShareFeedbackButtonText,
-                    Data = new ResponseCardPayload
-                    {
-                        MsTeams = new CardAction
-                        {
-                            Type = ActionTypes.MessageBack,
-                            DisplayText = Strings.ShareFeedbackDisplayText,
-                            Text = Constants.ShareFeedback,
-                        },
-                        UserQuestion = userQuestion,
-                        KnowledgeBaseAnswer = answer,
-                    },
-                },
+                //new AdaptiveSubmitAction
+                //{
+                //    Title = Strings.ShareFeedbackButtonText,
+                //    Data = new ResponseCardPayload
+                //    {
+                //        MsTeams = new CardAction
+                //        {
+                //            Type = ActionTypes.MessageBack,
+                //            DisplayText = Strings.ShareFeedbackDisplayText,
+                //            Text = Constants.ShareFeedback,
+                //        },
+                //        UserQuestion = userQuestion,
+                //        KnowledgeBaseAnswer = answer,
+                //    },
+                //},
             };
 
             return actionsList;
