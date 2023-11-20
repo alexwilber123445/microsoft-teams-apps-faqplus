@@ -54,7 +54,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common.Cards
             AdaptiveCard responseCard = new AdaptiveCard(new AdaptiveSchemaVersion(1, 2))
             {
                 Body = BuildResponseCardBody(response, userQuestion, answer, appBaseUri, payload, isRichCard),
-                Actions = BuildListOfActions(userQuestion, answer),
+                //Actions = BuildListOfActions(userQuestion, answer),
             };
 
             if (!string.IsNullOrEmpty(answerModel.RedirectionUrl))
@@ -94,7 +94,8 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common.Cards
                 new AdaptiveTextBlock
                 {
                     Weight = AdaptiveTextWeight.Bolder,
-                    Text = Strings.ResponseHeaderText,
+                    //Text = Strings.ResponseHeaderText,
+                    Text = "Sizin için bunu buldum;",
                     Wrap = true,
                     HorizontalAlignment = textAlignment,
                 },
